@@ -1,11 +1,11 @@
 const axios = require("axios");
 const { ApolloError } = require("apollo-server-express");
 
-const API_KEY = "2431bdcbb32f54f769ef9c1f7028381"
+const API_KEY = "a2431bdcbb32f54f769ef9c1f7028381"
 
-const BASE_URL_PATH = "https://api.themoviedb.org/3/"
+const BASE_URL = "https://api.themoviedb.org/3/"
 
-const BACKDROP_PATH_URL = "https://image.tmdb.org/t/p/w1280"
+const BACKDROP_PATH = "https://image.tmdb.org/t/p/w1280"
 
 const resolvers = {
     Query: {

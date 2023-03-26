@@ -25,11 +25,11 @@ const graphql_server = async () => {
     const apollo = new ApolloServer({
         typeDefs,
         resolvers,
-        plugins: [
-            ApolloServerPluginLandingPageProductionDefault({
-                footer: false,
-            }),
-        ],
+        // plugins: [
+        //     ApolloServerPluginLandingPageProductionDefault({
+        //         footer: false,
+        //     }),
+        // ],
     });
     await apollo.start();
     apollo.applyMiddleware({ app: app });
